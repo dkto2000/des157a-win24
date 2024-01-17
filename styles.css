@@ -1,6 +1,6 @@
 body{
 text-align: center;
-background:#E8E9EB;
+background:#79A4AE;
 }
 
 
@@ -13,11 +13,11 @@ nav ul {
 
 li {
   display:block;
-  background-color:#1e2a2c;
+  border: 0.4rem solid;
   border-radius:15px;
   width:150px;
   height:20px;
-  padding:10px;
+  padding:12px;
   margin-bottom:10px;
     
 }
@@ -44,7 +44,9 @@ a {
       background-size: 50%;
       color:white;
       display: flex;
-      padding-bottom: 60%;
+      position:absolute;
+      left:0%;
+      padding-bottom: 65%;
       width: 50%;
       animation-duration: 3s;
       animation-name: slid;
@@ -67,7 +69,7 @@ a {
     #titles {
       position:absolute;
       top: 15%;
-      right:50%;
+      right:4%;
      padding:150px; 
     }
     section{
@@ -80,7 +82,7 @@ padding-left:50%;
       position:absolute;
       top:5%;
       right:33.5%;
-      width: 190px;
+      width: 210px;
       height:550px;
       border-radius: 25px;
       animation-duration: 3s;
@@ -91,13 +93,13 @@ padding-left:50%;
         margin-bottom: 0%;
         position:absolute;
         top:100%;
-        width: 190px;
+        width: 210px;
         height:550px;
       }
     
       to {
         margin-top: 0%;
-        width: 190px;
+        width: 210px;
       }
     }
 
@@ -107,7 +109,7 @@ padding-left:50%;
       position:absolute;
       top:30%;
       right:17%;
-      width: 190px;
+      width: 210px;
       height:450px;
       border-radius: 25px;
       animation-duration: 3s;
@@ -119,13 +121,13 @@ padding-left:50%;
         margin-bottom: 0%;
         position:absolute;
         top:-100%;
-        width: 190px;
+        width: 210px;
         height:550px;
       }
     
       to {
         margin-top: 0%;
-        width: 190px;
+        width: 210px;
       }
     }
 
@@ -134,9 +136,9 @@ padding-left:50%;
       background-color: #310D20;
       color: white;
       position:absolute;
-      top:10%;
+      top:15%;
       right:0.5%;
-      width: 190px; 
+      width: 210px; 
       height:450px;
       border-radius: 25px;
       animation-duration: 3s;
@@ -145,7 +147,7 @@ padding-left:50%;
 
  
     footer {
-      background-color: #3E4E50;
+      background-color:#1e2a2c;
       color:white;
       position:absolute;
       bottom:0%;
