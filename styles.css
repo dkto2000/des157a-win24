@@ -1,32 +1,50 @@
 body{
+font-family: 'Poppins', sans-serif;
 text-align: center;
-background:#79A4AE;
+background-image: linear-gradient(to bottom, rgba(49, 13, 32, 0.86), #1e2a2cf2), url(images/BHNfhgU63qrks.webp);
+background-size: cover;
+background-repeat: no-repeat;
+width:50%;
 }
 
-
+main {
+  font-family: 'Roboto', sans-serif;
+}
 nav ul {
   list-style-type: none;
   padding:10px;
-  margin:auto;
+  margin:5px;
 
 }
 
 li {
   display:block;
-  border: 0.4rem solid;
+  border: 0.1rem solid;
   border-radius:15px;
   width:150px;
   height:20px;
   padding:12px;
   margin-bottom:10px;
-    
+  text-decoration: none;
+  color:white;
+  cursor:pointer;
+  transition: background-color 1s, 
+  color 1s;
 }
-
+li:hover {
+  background-color: #022F40;
+ }
 
 a {
   text-decoration: none;
- color:white;
+  color:white;
+  transition: 
+  color 1s;
 }
+a:hover {
+  padding-right: 25px;
+}
+
 
 
 @media only screen and (min-width: 600px) { 
@@ -39,7 +57,7 @@ a {
 
 
     header{
-      background-image: linear-gradient(to bottom, rgba(49, 13, 32, 0.86), rgba(30, 42, 44, 0.95)),
+      background-image: linear-gradient(to bottom, rgba(49, 13, 32, 0.86), #1e2a2cf2),
       url('images/face.JPG');
       background-size: 50%;
       color:white;
@@ -48,9 +66,9 @@ a {
       left:0%;
       padding-bottom: 65%;
       width: 50%;
-      animation-duration: 3s;
+      animation-duration: 2.5s;
       animation-name: slid;
-      
+      transition-delay: 1s;
     }
     @keyframes slid {
       from {
@@ -65,7 +83,10 @@ a {
       }
     }
     
-
+  header:hover {
+    background-image: url(images/face.JPG);
+    
+  }
     #titles {
       position:absolute;
       top: 15%;
@@ -85,7 +106,7 @@ padding-left:50%;
       width: 210px;
       height:550px;
       border-radius: 25px;
-      animation-duration: 3s;
+      animation-duration: 2.5s;
       animation-name: slidein;
     }
    @keyframes slidein {
@@ -112,7 +133,7 @@ padding-left:50%;
       width: 210px;
       height:450px;
       border-radius: 25px;
-      animation-duration: 3s;
+      animation-duration: 2.5s;
       animation-name: slide;
     }
 
@@ -141,7 +162,7 @@ padding-left:50%;
       width: 210px; 
       height:450px;
       border-radius: 25px;
-      animation-duration: 3s;
+      animation-duration: 2.5s;
       animation-name: slidein;
     }
 
