@@ -1,9 +1,8 @@
 body{
 font-family: 'Poppins', sans-serif;
 text-align: center;
-background-image: url(images/8cp8ut.gif);
-background-size: 20%;
 }
+
 
 main {
   font-family: 'Roboto', sans-serif;
@@ -52,6 +51,13 @@ a:hover {
       max-height: 750px;
       margin:auto;
     }
+
+    body{
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      background-image: url(images/8cp8ut.gif);
+      background-size: 20%;
+      }
 
 
     header{
