@@ -28,17 +28,19 @@ li {
   transition: background-color 1s, 
   color 1s;
 }
+
 li:hover {
   background-color: #022F40;
- }
+}
 
 a {
   text-decoration: none;
   color:white;
-  transition: 
+  transition: background-color 1s, 
   color 1s;
 }
 a:hover {
+  background-color: #022F40;
   padding-right: 25px;
 }
 
@@ -55,7 +57,7 @@ a:hover {
     body{
       font-family: 'Poppins', sans-serif;
       text-align: center;
-      background-image: url(images/8cp8ut.gif);
+      background-image: url(images/8cp7wd.gif);
       background-size: 20%;
       }
 
