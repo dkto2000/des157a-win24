@@ -4,7 +4,136 @@ text-align: center;
 background-image: url(images/8cp7wd.gif);
 
 }
+header{
+  background-image: linear-gradient(to bottom, rgba(49, 13, 32, 0.86), #1e2a2cf2),
+  url('images/face.JPG');
+  background-size: 50%;
+  height:470px;
+  color:white;
+  animation-duration: 1.5s;
+      animation-name: slid;
+     
+    }
+    @keyframes slid {
+      from {
+        margin-top: 100%;
+        height:470px;
+        
+      }
+    
+      to {
+        height:470px;
+      }
+    }
 
+   
+    
+
+#titles {
+  position:absolute;
+  top: 15%;
+  right:1%;
+ padding:100px; 
+}
+
+main {
+  font-family: 'Roboto', sans-serif;
+}
+nav ul {
+  list-style-type: none;
+  padding:8px;
+}
+a {
+  text-decoration: none;
+  color:white;
+}
+
+
+#leftcolumn{
+  background-color: #310D20;
+  color: white;
+  border-radius: 50px;
+  width:500px;
+  padding-top:10px;
+  padding-bottom:20px;
+  margin:50px;
+  animation-duration: 1.5s;
+  animation-name: slidein;
+    }
+    @keyframes slidein {
+      from {
+        margin-left: 80%;
+        padding-top:10px;
+        padding-bottom:20px;
+       
+
+      }
+    
+      to {
+   
+        padding-top:10px;
+        padding-bottom:20px;
+       
+      }
+    }
+
+#middlecolumn{
+  background-color: #310D20;
+  color: white;
+  border-radius: 50px;
+  width:500px;
+  padding-top:10px;
+  padding-bottom:20px;
+  animation-duration: 1.5s;
+  animation-name: slide;
+    }
+    @keyframes slide {
+      from {
+        margin-left: -80%;
+        padding-top:10px;
+        padding-bottom:20px;
+       
+
+      }
+    
+      to {
+      
+        padding-top:10px;
+        padding-bottom:20px;
+       
+      }
+    }
+
+#rightcolumn{
+  background-color: #310D20;
+  color: white;
+  border-radius: 50px;
+  width:500px;
+  padding-top:10px;
+  padding-bottom:20px;
+  animation-duration: 1.5s;
+  animation-name: slidein;
+    }
+   @keyframes slidein {
+      from {
+        margin-left: 80%;
+        padding-top:10px;
+        padding-bottom:20px;
+       
+
+      }
+    
+      to {
+       
+        padding-top:10px;
+        padding-bottom:20px;
+       
+      }
+    }
+footer {
+  background-color:#1e2a2c;
+  color:white;
+}
 
 
 @media only screen and (min-width: 600px) { 
@@ -31,11 +160,10 @@ background-image: url(images/8cp7wd.gif);
       display: flex;
       position:absolute;
       left:0%;
-      padding-bottom: 60%;
       width: 50%;
+      height: 750px;
       animation-duration: 2.5s;
       animation-name: slid;
-      transition-delay: 1s;
     }
     @keyframes slid {
       from {
@@ -67,6 +195,7 @@ padding-left:50%;
     nav ul {
       list-style-type: none;
       padding:8px;
+    
     }
 
     li {
@@ -103,8 +232,8 @@ padding-left:50%;
       background-color: #310D20;
       color: white;
       position:absolute;
-      top:5%;
-      right:33.5%;
+      top:2%;
+      right:29.8%;
       width: 192px;
       height:550px;
       border-radius: 25px;
@@ -121,7 +250,7 @@ padding-left:50%;
       }
     
       to {
-        margin-top: 0%;
+        
         width: 192px;
       }
     }
@@ -130,8 +259,8 @@ padding-left:50%;
       background-color: #310D20;
       color: white;
       position:absolute;
-      top:30%;
-      right:17%;
+      top:25%;
+      right:17.2%;
       width: 192px;
       height:450px;
       border-radius: 25px;
@@ -149,7 +278,7 @@ padding-left:50%;
       }
     
       to {
-        margin-top: 0%;
+       
         width: 192px;
       }
     }
@@ -178,5 +307,76 @@ padding-left:50%;
       width:100%;
       padding-bottom: 10px;
     }
-    
+
+
+
+
+    /* Universal Desktop Set Up */
+    @media only screen and (min-width: 1300px) {
+      
+      header {
+        height:800px;
+        animation-duration: 1.5s;
+        animation-name: slid;
+      }
+      @keyframes slid {
+        from {
+          margin-top: 0%;
+          width: 120%
+          
+        }
+      
+        to {
+          margin-bottom: 0%;
+          width: 50%;
+        }
+      }
+      nav ul {
+        margin:5px;
+      }
+      #leftcolumn {
+        width:205px;
+         animation-duration: 1.5s;
+        animation-name: slidein;
+      }
+     @keyframes slidein {
+        from {
+          margin-bottom: 0%;
+          position:absolute;
+          top:100%;
+          width: 205px;
+          height:550px;
+        }
+      
+        to {
+          width: 205px;
+          height:550px;
+        }
+      }
+      #rightcolumn {
+        width:205px;
+        animation-duration: 1.5s;
+        animation-name: slide;
+      }
+  
+      @keyframes slide {
+        from {
+          margin-bottom: 0%;
+          position:absolute;
+          top:-100%;
+          width: 205px;
+          height:550px;
+        }
+      
+        to {
+         
+          width: 205px;
+        }
+      }
+      #middlecolumn {
+        width:205px;
+        animation-duration: 1.5s;
+        animation-name: slidein;
+      }
+    }
 }
