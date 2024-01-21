@@ -1,322 +1,171 @@
 body{
-font-family: 'Poppins', sans-serif;
-text-align: center;
-background-image: url(images/8cp7wd.gif);
-
-}
-header{
-  background-image: linear-gradient(to bottom, rgba(49, 13, 32, 0.86), #1e2a2cf2),
-  url('images/face.JPG');
-  background-size: 50%;
-  height:470px;
-  color:white;
-  animation-duration: 1.5s;
-      animation-name: slid;
-     
-    }
-    @keyframes slid {
-      from {
-        margin-top: 100%;
-        height:470px;
-        
-      }
-    
-      to {
-        height:470px;
-      }
-    }
-
-   
-    
-
-#titles {
-  position:absolute;
-  top: 15%;
-  right:1%;
- padding:100px; 
-}
-
-main {
-  font-family: 'Roboto', sans-serif;
-}
-nav ul {
-  list-style-type: none;
-  padding:8px;
-}
-a {
-  text-decoration: none;
-  color:white;
-}
-
-
-#leftcolumn{
-  background-color: #310D20;
-  color: white;
-  border-radius: 50px;
-  width:500px;
-  padding-top:10px;
-  padding-bottom:20px;
-  margin:50px;
-  animation-duration: 1.5s;
-  animation-name: slidein;
-    }
-    @keyframes slidein {
-      from {
-        margin-left: 80%;
-        padding-top:10px;
-        padding-bottom:20px;
-       
-
-      }
-    
-      to {
-   
-        padding-top:10px;
-        padding-bottom:20px;
-       
-      }
-    }
-
-#middlecolumn{
-  background-color: #310D20;
-  color: white;
-  border-radius: 50px;
-  width:500px;
-  padding-top:10px;
-  padding-bottom:20px;
-  animation-duration: 1.5s;
-  animation-name: slide;
-    }
-    @keyframes slide {
-      from {
-        margin-left: -80%;
-        padding-top:10px;
-        padding-bottom:20px;
-       
-
-      }
-    
-      to {
-      
-        padding-top:10px;
-        padding-bottom:20px;
-       
-      }
-    }
-
-#rightcolumn{
-  background-color: #310D20;
-  color: white;
-  border-radius: 50px;
-  width:500px;
-  padding-top:10px;
-  padding-bottom:20px;
-  animation-duration: 1.5s;
-  animation-name: slidein;
-    }
-   @keyframes slidein {
-      from {
-        margin-left: 80%;
-        padding-top:10px;
-        padding-bottom:20px;
-       
-
-      }
-    
-      to {
-       
-        padding-top:10px;
-        padding-bottom:20px;
-       
-      }
-    }
-footer {
-  background-color:#1e2a2c;
-  color:white;
-}
-
-
-@media only screen and (min-width: 600px) { 
- 
-    .container{
-      max-width: 1200px;
-      max-height: 750px;
-      margin:auto;
-    }
-
-    body{
-      font-family: 'Poppins', sans-serif;
-      text-align: center;
-      background-image: url(images/8cp7wd.gif);
-      background-size: 20%;
-      }
-
-
-    header{
-      background-image: linear-gradient(to bottom, rgba(49, 13, 32, 0.86), #1e2a2cf2),
-      url('images/face.JPG');
-      background-size: 50%;
-      color:white;
-      display: flex;
-      position:absolute;
-      left:0%;
-      width: 50%;
-      height: 750px;
-      animation-duration: 2.5s;
-      animation-name: slid;
-    }
-    @keyframes slid {
-      from {
-        margin-top: 0%;
-        width: 120%
-        
-      }
-    
-      to {
-        margin-bottom: 0%;
-        width: 50%;
-      }
-    }
-    
-  header:hover {
-    background-image: url(images/face2.JPG);
-    
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-image: url(images/8cp7wd.gif);
+  
   }
-    #titles {
-      position:absolute;
-      top: 15%;
-      right:4%;
-     padding:150px; 
-    }
-    section{
-padding-left:50%;
-    }
-    
-    nav ul {
-      list-style-type: none;
-      padding:8px;
-    
-    }
-
-    li {
-      display:block;
-      border: 0.1rem solid;
-      border-radius:15px;
-      width:150px;
-      height:20px;
-      padding:12px;
-      margin-bottom:10px;
-      text-decoration: none;
-      color:white;
-      cursor:pointer;
-      transition: background-color 1s, 
-      color 1s;
-    }
-    
-    li:hover {
-      background-color: #022F40;
-    }
-    
-    a {
-      text-decoration: none;
-      color:white;
-      transition: background-color 1s, 
-      color 1s;
-    }
-    a:hover {
-      background-color: #022F40;
-      padding-right: 25px;
-    }
-    
-    #leftcolumn{
-      background-color: #310D20;
-      color: white;
-      position:absolute;
-      top:2%;
-      right:29.8%;
-      width: 192px;
-      height:550px;
-      border-radius: 25px;
-      animation-duration: 2.5s;
-      animation-name: slidein;
-    }
-   @keyframes slidein {
-      from {
-        margin-bottom: 0%;
-        position:absolute;
-        top:100%;
-        width: 192px;
-        height:550px;
-      }
-    
-      to {
-        
-        width: 192px;
-      }
-    }
-
-    #middlecolumn{
-      background-color: #310D20;
-      color: white;
-      position:absolute;
-      top:25%;
-      right:17.2%;
-      width: 192px;
-      height:450px;
-      border-radius: 25px;
-      animation-duration: 2.5s;
-      animation-name: slide;
-    }
-
-    @keyframes slide {
-      from {
-        margin-bottom: 0%;
-        position:absolute;
-        top:-100%;
-        width: 192px;
-        height:550px;
-      }
-    
-      to {
+  header{
+    background-image: linear-gradient(to bottom, rgba(49, 13, 32, 0.86), #1e2a2cf2),
+    url('images/face.JPG');
+    background-size: 50%;
+    height:470px;
+    color:white;
+    animation-duration: 1.5s;
+        animation-name: slid;
        
-        width: 192px;
       }
-    }
-
-    
-    #rightcolumn {
-      background-color: #310D20;
-      color: white;
-      position:absolute;
-      top:15%;
-      right:0.5%;
-      width: 192px; 
-      height:450px;
-      border-radius: 25px;
-      animation-duration: 2.5s;
-      animation-name: slidein;
-    }
-
- 
-    footer {
-      background-color:#1e2a2c;
-      color:white;
-      position:absolute;
-      bottom:0%;
-      left:0%;
-      width:100%;
-      padding-bottom: 10px;
-    }
-
-
-
-
-    /* Universal Desktop Set Up */
-    @media only screen and (min-width: 1300px) {
+      @keyframes slid {
+        from {
+          margin-top: 100%;
+          height:470px;
+          
+        }
       
-      header {
-        height:800px;
-        animation-duration: 1.5s;
+        to {
+          height:470px;
+        }
+      }
+  
+     
+      
+  
+  #titles {
+    position:absolute;
+    top: 15%;
+    right:1%;
+   padding:100px; 
+  }
+  
+  main {
+    font-family: 'Roboto', sans-serif;
+  }
+  nav ul {
+    list-style-type: none;
+    padding:8px;
+  }
+  a {
+    text-decoration: none;
+    color:white;
+  }
+  
+  
+  #leftcolumn{
+    background-color: #310D20;
+    color: white;
+    border-radius: 50px;
+    width:500px;
+    padding-top:10px;
+    padding-bottom:20px;
+    margin:50px;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+      }
+      @keyframes slidein {
+        from {
+          margin-left: 80%;
+          padding-top:10px;
+          padding-bottom:20px;
+         
+  
+        }
+      
+        to {
+     
+          padding-top:10px;
+          padding-bottom:20px;
+         
+        }
+      }
+  
+  #middlecolumn{
+    background-color: #310D20;
+    color: white;
+    border-radius: 50px;
+    width:500px;
+    padding-top:10px;
+    padding-bottom:20px;
+    animation-duration: 1.5s;
+    animation-name: slide;
+      }
+      @keyframes slide {
+        from {
+          margin-left: -80%;
+          padding-top:10px;
+          padding-bottom:20px;
+         
+  
+        }
+      
+        to {
+        
+          padding-top:10px;
+          padding-bottom:20px;
+         
+        }
+      }
+  
+  #rightcolumn{
+    background-color: #310D20;
+    color: white;
+    border-radius: 50px;
+    width:500px;
+    padding-top:10px;
+    padding-bottom:20px;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+      }
+     @keyframes slidein {
+        from {
+          margin-left: 80%;
+          padding-top:10px;
+          padding-bottom:20px;
+         
+  
+        }
+      
+        to {
+         
+          padding-top:10px;
+          padding-bottom:20px;
+         
+        }
+      }
+  footer {
+    background-color:#1e2a2c;
+    color:white;
+  }
+  
+  
+  @media only screen and (min-width: 600px) { 
+   
+      .container{
+        max-width: 1200px;
+        max-height: 750px;
+        margin:auto;
+      }
+  
+      body{
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        background-image: url(images/8cp7wd.gif);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+
+        }
+  
+  
+      header{
+        background-image: linear-gradient(to bottom, rgba(49, 13, 32, 0.86), #1e2a2cf2),
+        url('images/face.JPG');
+        background-size: 50%;
+        color:white;
+        display: flex;
+        position:absolute;
+        left:0%;
+        width: 50%;
+        height: 750px;
+        animation-duration: 2.5s;
         animation-name: slid;
       }
       @keyframes slid {
@@ -331,12 +180,67 @@ padding-left:50%;
           width: 50%;
         }
       }
-      nav ul {
-        margin:5px;
+      
+    header:hover {
+      background-image: url(images/face2.JPG);
+      
+    }
+      #titles {
+        position:absolute;
+        top: 15%;
+        right:4%;
+       padding:150px; 
       }
-      #leftcolumn {
-        width:205px;
-         animation-duration: 1.5s;
+      section{
+  padding-left:50%;
+      }
+      
+      nav ul {
+        list-style-type: none;
+        padding:8px;
+      
+      }
+  
+      li {
+        display:block;
+        border: 0.1rem solid;
+        border-radius:15px;
+        width:150px;
+        height:20px;
+        padding:12px;
+        margin-bottom:10px;
+        text-decoration: none;
+        color:white;
+        cursor:pointer;
+        transition: background-color 1s, 
+        color 1s;
+      }
+      
+      li:hover {
+        background-color: #022F40;
+      }
+      
+      a {
+        text-decoration: none;
+        color:white;
+        transition: background-color 1s, 
+        color 1s;
+      }
+      a:hover {
+        background-color: #022F40;
+        padding-right: 25px;
+      }
+      
+      #leftcolumn{
+        background-color: #310D20;
+        color: white;
+        position:absolute;
+        top:2%;
+        right:29.5%;
+        width: 192px;
+        height:550px;
+        border-radius: 25px;
+        animation-duration: 2.5s;
         animation-name: slidein;
       }
      @keyframes slidein {
@@ -344,18 +248,26 @@ padding-left:50%;
           margin-bottom: 0%;
           position:absolute;
           top:100%;
-          width: 205px;
+          width: 192px;
           height:550px;
         }
       
         to {
-          width: 205px;
-          height:550px;
+          
+          width: 192px;
         }
       }
-      #rightcolumn {
-        width:205px;
-        animation-duration: 1.5s;
+  
+      #middlecolumn{
+        background-color: #310D20;
+        color: white;
+        position:absolute;
+        top:25%;
+        right:17%;
+        width: 192px;
+        height:450px;
+        border-radius: 25px;
+        animation-duration: 2.5s;
         animation-name: slide;
       }
   
@@ -364,19 +276,113 @@ padding-left:50%;
           margin-bottom: 0%;
           position:absolute;
           top:-100%;
-          width: 205px;
+          width: 192px;
           height:550px;
         }
       
         to {
          
-          width: 205px;
+          width: 192px;
         }
       }
-      #middlecolumn {
-        width:205px;
-        animation-duration: 1.5s;
+  
+      
+      #rightcolumn {
+        background-color: #310D20;
+        color: white;
+        position:absolute;
+        top:15%;
+        right:0.2%;
+        width: 192px; 
+        height:450px;
+        border-radius: 25px;
+        animation-duration: 2.5s;
         animation-name: slidein;
       }
-    }
-}
+  
+   
+      footer {
+        background-color:#1e2a2c;
+        color:white;
+        position:absolute;
+        bottom:0%;
+        left:0%;
+        width:100%;
+        padding-bottom: 10px;
+      }
+  
+  
+  
+  
+      /* Universal Desktop Set Up */
+      @media only screen and (min-width: 1300px) {
+        
+        header {
+          height:800px;
+          animation-duration: 1.5s;
+          animation-name: slid;
+        }
+        @keyframes slid {
+          from {
+            margin-top: 0%;
+            width: 120%
+            
+          }
+        
+          to {
+            margin-bottom: 0%;
+            width: 50%;
+          }
+        }
+        nav ul {
+          margin:5px;
+        }
+        #leftcolumn {
+          width:205px;
+           animation-duration: 1.5s;
+          animation-name: slidein;
+        }
+       @keyframes slidein {
+          from {
+            margin-bottom: 0%;
+            position:absolute;
+            top:100%;
+            width: 205px;
+           
+          }
+        
+          to {
+            width: 205px;
+           
+          }
+        }
+        #rightcolumn {
+          width:205px;
+          position:absolute;
+          top:15%;
+          right:0.6%;
+          animation-duration: 1.5s;
+          animation-name: slide;
+        }
+    
+        @keyframes slide {
+          from {
+            margin-bottom: 0%;
+            position:absolute;
+            top:-100%;
+            width: 205px;
+            height:550px;
+          }
+        
+          to {
+           
+            width: 205px;
+          }
+        }
+        #middlecolumn {
+          width:205px;
+          animation-duration: 1.5s;
+          animation-name: slidein;
+        }
+      }
+  }
