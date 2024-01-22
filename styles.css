@@ -1,28 +1,41 @@
+.container{
+  max-width: 600px;
+  max-height: 750px;
+  margin:auto;
+}
+
 body{
   font-family: 'Poppins', sans-serif;
   text-align: center;
   background-image: url(images/8cp7wd.gif);
   
+  
   }
+
+  main {
+    font-family: 'Roboto', sans-serif;
+    padding:10px;
+  }
+
   header{
     background-image: linear-gradient(to bottom, rgba(49, 13, 32, 0.86), #1e2a2cf2),
     url('images/face.JPG');
     background-size: 50%;
-    height:470px;
+    height:325px;
     color:white;
     animation-duration: 1.5s;
-        animation-name: slid;
+    animation-name: slidy;
        
       }
-      @keyframes slid {
+      @keyframes slidy {
         from {
           margin-top: 100%;
-          height:470px;
+          height:325px;
           
         }
       
         to {
-          height:470px;
+          height:325px;
         }
       }
   
@@ -31,18 +44,26 @@ body{
   
   #titles {
     position:absolute;
-    top: 15%;
+    top: 1%;
     right:1%;
-   padding:100px; 
+   padding:80px; 
+   font-size: 12px;
+  }
+
+  h1{
+    font-size: 30px;
   }
   
-  main {
-    font-family: 'Roboto', sans-serif;
-  }
-  nav ul {
+  nav li ul {
     list-style-type: none;
     padding:8px;
   }
+  li {
+    cursor:pointer;
+    transition: background-color 1s, 
+    color 1s;
+  }
+
   a {
     text-decoration: none;
     color:white;
@@ -53,17 +74,17 @@ body{
     background-color: #310D20;
     color: white;
     border-radius: 50px;
-    width:500px;
-    padding-top:10px;
+    width: calc(90% - 10px);
+    padding-top:1px;
     padding-bottom:20px;
-    margin:50px;
+    margin:25px;
     animation-duration: 1.5s;
     animation-name: slidein;
       }
       @keyframes slidein {
         from {
           margin-left: 80%;
-          padding-top:10px;
+          padding-top:1px;
           padding-bottom:20px;
          
   
@@ -71,35 +92,37 @@ body{
       
         to {
      
-          padding-top:10px;
+          padding-top:1px;
           padding-bottom:20px;
          
         }
       }
+
   
   #middlecolumn{
     background-color: #310D20;
     color: white;
     border-radius: 50px;
-    width:500px;
-    padding-top:10px;
-    padding-bottom:20px;
+    width: calc(90% - 10px);
+    padding-top:1px;
+    padding-bottom:10px;
+    margin:25px;
     animation-duration: 1.5s;
     animation-name: slide;
       }
       @keyframes slide {
         from {
           margin-left: -80%;
-          padding-top:10px;
-          padding-bottom:20px;
+          padding-top:1px;
+          padding-bottom:10px;
          
   
         }
       
         to {
         
-          padding-top:10px;
-          padding-bottom:20px;
+          padding-top:1px;
+          padding-bottom:10px;
          
         }
       }
@@ -108,34 +131,69 @@ body{
     background-color: #310D20;
     color: white;
     border-radius: 50px;
-    width:500px;
-    padding-top:10px;
-    padding-bottom:20px;
+    width: calc(90% - 10px);
+    padding-top:1px;
+    padding-bottom:10px;
+    margin:25px;
     animation-duration: 1.5s;
-    animation-name: slidein;
+    animation-name: slid;
       }
-     @keyframes slidein {
+     @keyframes slid {
         from {
           margin-left: 80%;
-          padding-top:10px;
-          padding-bottom:20px;
+          padding-top:1px;
+          padding-bottom:10px;
          
   
         }
       
         to {
          
-          padding-top:10px;
-          padding-bottom:20px;
+          padding-top:1px;
+          padding-bottom:10px;
          
         }
       }
   footer {
     background-color:#1e2a2c;
+    padding:0.5px;
+    padding:25px;
+    margin:auto;
     color:white;
   }
   
   
+  .dropdown-content {
+    display: none;
+    list-style-type: none;
+  
+  }
+  
+
+  .dropdown-content a {
+    color:white;
+    padding-right:40px;
+    margin:20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+  }
+  
+#leftcolumn:hover .dropdown-content {
+display: block;
+
+}
+
+#middlecolumn:hover .dropdown-content {
+  display: block;
+  
+  }
+
+  #rightcolumn:hover .dropdown-content {
+    display: block;
+    
+    }
+
   @media only screen and (min-width: 600px) { 
    
       .container{
@@ -198,47 +256,43 @@ body{
       nav ul {
         list-style-type: none;
         padding:8px;
+        
       
       }
-  
+      
       li {
-        display:block;
         border: 0.1rem solid;
-        border-radius:15px;
-        width:150px;
-        height:20px;
-        padding:12px;
-        margin-bottom:10px;
+        width:155px;
+        height:40px;
+        margin:8px;
+        border-radius: 12px;
         text-decoration: none;
         color:white;
         cursor:pointer;
         transition: background-color 1s, 
         color 1s;
+        padding-bottom: 15px;
+   
+  
       }
       
-      li:hover {
-        background-color: #022F40;
-      }
-      
-      a {
+      .dropdown-content a {
+
+        width:119.4px;
         text-decoration: none;
         color:white;
         transition: background-color 1s, 
         color 1s;
-      }
-      a:hover {
-        background-color: #022F40;
-        padding-right: 25px;
       }
       
       #leftcolumn{
         background-color: #310D20;
         color: white;
         position:absolute;
-        top:2%;
-        right:29.5%;
+        top:10%;
+        right:31.2%;
         width: 192px;
-        height:550px;
+        height:490px;
         border-radius: 25px;
         animation-duration: 2.5s;
         animation-name: slidein;
@@ -249,7 +303,7 @@ body{
           position:absolute;
           top:100%;
           width: 192px;
-          height:550px;
+          height:490px;
         }
       
         to {
@@ -262,10 +316,10 @@ body{
         background-color: #310D20;
         color: white;
         position:absolute;
-        top:25%;
-        right:17%;
+        top:23%;
+        right:14.87%;
         width: 192px;
-        height:450px;
+        height:440px;
         border-radius: 25px;
         animation-duration: 2.5s;
         animation-name: slide;
@@ -277,7 +331,7 @@ body{
           position:absolute;
           top:-100%;
           width: 192px;
-          height:550px;
+          height:440px;
         }
       
         to {
@@ -292,9 +346,9 @@ body{
         color: white;
         position:absolute;
         top:15%;
-        right:0.2%;
+        right:-1.5%;
         width: 192px; 
-        height:450px;
+        height:400px;
         border-radius: 25px;
         animation-duration: 2.5s;
         animation-name: slidein;
@@ -302,19 +356,21 @@ body{
   
    
       footer {
+        text-align: center;
         background-color:#1e2a2c;
         color:white;
         position:absolute;
         bottom:0%;
         left:0%;
-        width:100%;
+        width:95.85%;
+        height:10%;
         padding-bottom: 10px;
+        padding-top: 5px;
       }
   
   
   
-  
-      /* Universal Desktop Set Up */
+       /* Universal Desktop Set Up */
       @media only screen and (min-width: 1300px) {
         
         header {
@@ -334,11 +390,29 @@ body{
             width: 50%;
           }
         }
+
+
+        #titles {
+          position:absolute;
+          top: 30%;
+          left:5%;
+         padding:80px; 
+         font-size: 20px;
+        }
+
+        h1 {
+          font-size:35px;
+        }
+
         nav ul {
           margin:5px;
         }
+
+        
         #leftcolumn {
           width:205px;
+          position:absolute;
+          right:32%;
            animation-duration: 1.5s;
           animation-name: slidein;
         }
@@ -356,11 +430,14 @@ body{
            
           }
         }
+
+       
+
         #rightcolumn {
           width:205px;
           position:absolute;
           top:15%;
-          right:0.6%;
+          right:-1.5%;
           animation-duration: 1.5s;
           animation-name: slide;
         }
@@ -381,8 +458,25 @@ body{
         }
         #middlecolumn {
           width:205px;
+          position:absolute;
+          right:15.3%;
           animation-duration: 1.5s;
           animation-name: slidein;
         }
+
+        .dropdown-content li{
+          cursor:pointer;
+          transition: background-color 1s, 
+          color 1s;
+        }
+
+        .dropdown-content li:hover{
+          background-color: #1e2a2c;
+        }
+
+        footer {
+          width:96.2%;
+        }
       }
+      
   }
