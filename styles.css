@@ -9,7 +9,6 @@ body{
   text-align: center;
   background-image: url(images/8cp7wd.gif);
   
-  
   }
 
   main {
@@ -59,6 +58,7 @@ body{
     padding:8px;
   }
   li {
+    list-style-type: none;
     cursor:pointer;
     transition: background-color 1s, 
     color 1s;
@@ -249,9 +249,7 @@ display: block;
         right:4%;
        padding:150px; 
       }
-      section{
-  padding-left:50%;
-      }
+     
       
       nav ul {
         list-style-type: none;
