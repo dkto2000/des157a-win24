@@ -1,3 +1,8 @@
+.container {
+  max-width: 1200px;
+  max-width: 750px;
+}
+
 body {
   font-family: "Kanit", sans-serif;
   padding: 20%;
@@ -9,16 +14,16 @@ header {
   position:fixed;
   top:0%;
   left:0%;
-  width: 100%;
+  width: 99.95%;
   height:80%;
   color:white;
 }
 
 
 h1{
- position:fixed;
- top:0%;
- left:41%;
+position: relative;
+left:36.8%;
+ padding:20px;
 }
 
 a  {
@@ -28,54 +33,71 @@ img {
   width:100%;
   height:100%;
   position:absolute;
-  top:14%;
+  top:15%;
 }
 
 
 h2 {
-  font-size: 50px;
-  width:50%;
+  font-size: 35px;
+  width:40%;
   
 }
-main{
+
+#FormDes {
   background-color: #F9CA0F;
-  width:90.8%;
-  height:65%;
-  position:absolute;
-  left:0%;
-  top:71%;
-  padding-left:120px;
-  padding-top:200px;
-  padding-bottom: 10px;
   color:#110B11;
-}
-article {
+  width:93.6%;
+  height:80%;
   position:absolute;
-  top:1%;
+  left:-2%;
+  top:81%;
+  padding-left:100px;
+  font-size: 14px;
 }
 
+.Form {
+  position: relative;
+  top:1%;
+ 
+}
 
-main p {
-  width:40%;
+#FormDes p {
+  width:44%;
   line-height: 1.7rem;
+  
   
 }
 footer {
   text-align: center;
   position:absolute;
-  width:105%;
-  bottom:-61%;
-  left:-1.5%;
+  width: 101%;
+ bottom: -70%;
+  left:-1%;
   padding-bottom: 5px;;
   background-color:#1e2a2c;
   color:white;
+}
+footer p {
+  text-align: center;
 }
 
 footer a{
   color:white;
 }
 
+@media only screen and (min-width: 1300px) {
+h1 {
+  position:relative;
+  left:38%;
+}
 
+ #FormDes {
+  padding:20px;
+  padding-left:90px;
+ }
+ 
+
+}
 
 
 
