@@ -22,7 +22,7 @@ header {
 
 h1{
 position: relative;
-left:36.8%;
+left:36%;
  padding:20px;
 }
 
@@ -81,9 +81,13 @@ footer p {
   text-align: center;
 }
 
-footer a{
+footer p {
+  padding-right: 30px;
+ }
+ footer a {
+  padding-right: 30px;
   color:white;
-}
+ }
 
 @media only screen and (min-width: 1300px) {
 header {
@@ -96,12 +100,13 @@ header {
 
  #FormDes {
   padding:20px;
-  padding-left: 88px;
+  padding-left: 99px;
  }
  footer {
   width:101%;  
   
  }
+ 
  
 
 }
