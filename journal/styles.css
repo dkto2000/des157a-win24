@@ -86,14 +86,21 @@ footer a{
 }
 
 @media only screen and (min-width: 1300px) {
-h1 {
+header {
+  width:99.9%;
+}
+  h1 {
   position:relative;
   left:38%;
 }
 
  #FormDes {
   padding:20px;
-  padding-left:90px;
+  padding-left: 88px;
+ }
+ footer {
+  width:101%;  
+  
  }
  
 
