@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiment 2</title>
+</head>
+<body>
+  <div>
+
+  </div>
+
+  <script>
+
+var question = prompt('What is your favorite color? Red, Blue, Green, Yellow, Orange, Purple, White, Black, or Silver?','').toLowerCase();
+
+
+function choice(){
+  if(question == "red" || question == "blue" || question == "green") {
+   
+    document.body.style.backgroundColor = question;
+    var finalC = question;
+
+  } else if(question == "yellow" || question == "orange" || question == "purple") {
+   
+    document.body.style.backgroundColor = question;
+    var finalC = question;
+
+  } else if(question == "white" || question == "black" || question == "silver") {
+    
+    document.body.style.backgroundColor = question;
+    var finalC = question;
+
+  } else {
+   
+    var myTag = document.createAttribute('p');
+    var myPhrase = document.createTextNode('You really are clueless, huh...');
+    myTag.appendChild(myPhrase);
+    document.querySelector('div').appendChild(myTag);
+
+  }
+  return finalC;
+}
+choice(question);
+
+
+
+
+  </script>
+</body>
+</html>
