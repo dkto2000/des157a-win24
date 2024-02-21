@@ -4,11 +4,19 @@ body {
   margin:auto;
   font-family: "Inknut Antiqua", serif;
   font-size: 15px;
+  animation-name: color-shift;
+  animation-duration: 6s;
+}
+@keyframes color-shift {
+  0%   {background-color: #fff2c8;}
+  25%  {background-color: #666666;}
+  50%  {background-color: #313B72}
+  100% {background-color: #FB4D3D}
 }
 
 #logo {
   height:145px;
-  margin: auto;
+  margin:auto;
 }
 
 
@@ -23,18 +31,40 @@ h2{
   font-size: 16px;
   color:#101010;
   text-align: center;
-
-
+  animation-name: color-change;
+  animation-duration: 6s;
  
+}
+
+@keyframes color-change {
+  from  {color: #101010;}
+  to  {color:#fff2c8;}
 }
 
 #firstpic {
   display:block;
   width: calc(100% + 20px);
  height:35vh;
+ animation-duration: 1.5s;
+    animation-name: slidein;
+      }
+      @keyframes slidein {
+        from {
+          margin-left: 80%;
+          width: calc(100% + 20px);
+          height:35vh;
+         
+  
+        }
+      
+        to {
+     
+          padding-top:1px;
+          padding-bottom:20px;
+         
+        }
+      }
 
-
-}
 
 form {
   background-color: #450C17;
@@ -64,6 +94,15 @@ label {
   color:#fffceb; 
 }
 
+input {
+  cursor:pointer;
+  transition:  background-color 2s ease-out, width 4s;
+}
+div:hover {
+  background-color: #101010;
+  width: 95%;
+  border-radius: 10px;
+}
 select {
   display:flex;
   padding:7px;
