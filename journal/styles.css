@@ -10,7 +10,36 @@ body {
 
   
 }
+#family {
+  width:500px;
+  height:360px;
+  position:absolute;
+  right:5%;
+  top:0.5%;  
+  border-radius: 15px;
+}
 
+#groudon { 
+  width:500px;
+  height:360px;
+  position:absolute;
+  right:5%;
+  top:62%;
+  border-radius: 15px;
+}
+#Tofam{
+  position: absolute;
+  right:6%;
+  top:56%;
+  color:#FCFAFA;
+}
+
+#grow {
+  position: absolute;
+  right:6%;
+  top: 117%;
+  color:#FCFAFA;
+}
 header {
   background-color:#1e2a2c;
   position:fixed;
@@ -25,7 +54,7 @@ header {
 
 h1{
 position: relative;
-left:38%;
+left:36%;
  padding:20px;
 }
 
@@ -46,10 +75,10 @@ h2 {
   
 }
 
-#VisualThinking{
-  background-color: #49B079;
+#VisualAnal{
+  background-color: #5448C8;
   color:#110B11;
-  height:80%;
+  height:120%;
   position:absolute;
   left:-2%;
   top:81%;
@@ -58,11 +87,48 @@ h2 {
   font-size: 14px;
 }
 
-#VisualThinking p {
+#VisualAnal p {
+  width:44%;
+  line-height: 1.7rem;
+  color:#FCFAFA;
+    
+}
+
+#VisualAnal a {
+  color:yellow;
+    
+}
+
+#VisualAnal h2,#VisualAnal h3 {
+ 
+  color:#FCFAFA;
+    
+}
+
+#growl{ 
+  padding-top:80px;
+}
+
+
+#VisualThinking {
+  background-color: #49B079;
+  color:#110B11;
+  height:80%;
+  position:absolute;
+  left:-2%;
+  top:206%;
+  padding:20px;
+  padding-left: 100px;
+  font-size: 14px;
+}
+
+
+#VisualThinking  p {
   width:44%;
   line-height: 1.7rem;
     
 }
+
 
 #OverlayDes {
   background-color: #F9CA0F;
@@ -70,12 +136,11 @@ h2 {
   height:80%;
   position:absolute;
   left:-2%;
-  top:156%;
+  top:278%;
   padding:20px;
   padding-left: 100px;
   font-size: 14px;
 }
-
 
 #OverlayDes p {
   width:44%;
@@ -89,7 +154,7 @@ h2 {
   height:70%;
   position:absolute;
   left:-2%;
-  top:238%;
+  top:358%;
   padding:20px;
   padding-left: 100px;
   font-size: 14px;
@@ -100,6 +165,7 @@ h2 {
   line-height: 1.7rem;
     
 }
+
 
 
 .Form {
@@ -113,7 +179,7 @@ footer {
   text-align: center;
   position:absolute;
   width: 101%;
- bottom:-220%;
+ bottom:-335%;
   left:-1%;
   padding-bottom: 5px;;
   background-color:#1e2a2c;
@@ -121,18 +187,41 @@ footer {
 }
 footer p {
   text-align: center;
-  padding-right: 30px;
+  padding-right: 50px;
 
 }
 
  footer a {
-  padding-right: 30px;
+  padding-right: 50px;
   color:white;
  }
 
-
-
-
+@media only screen and (min-width:1440px){
+#groudon{
+  position:absolute;
+  top:70%;
+  right:10%;
+}
+#grow {
+  position:absolute;
+  top:130%;
+  
+}
+#growl{
+  padding-top: 130px;
+}
+#family{
+  position:absolute;
+  right:10%;
+}
+#Tofam {
+  position:absolute;
+  top:60%;
+}
+h1{ 
+  padding-left:50px;
+}
+}
 
 
 
