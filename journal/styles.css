@@ -204,7 +204,7 @@ footer p {
 }
 #grow {
   position:absolute;
-  top:130%;
+  top:133%;
   
 }
 #growl{
@@ -216,10 +216,14 @@ footer p {
 }
 #Tofam {
   position:absolute;
-  top:60%;
+  top:64%;
 }
 h1{ 
   padding-left:50px;
+}
+
+#VisualAnal{
+  padding-bottom:200px;
 }
 }
 
