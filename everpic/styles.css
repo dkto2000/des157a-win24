@@ -1,48 +1,254 @@
-body{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+        
 
-}
+body {
+   background-color: black;
+   opacity: 2;
+     
 
-.hero:after{
-  content:"";
-  background-image:url("../images/grain.jpg");
-  height: 300%;
-  width: 300%;
-  position: fixed;
-  opacity:0.1;
-   animation: animateGrain 5s steps(10) infinite;
-}
-
-@keyframes animateGrain{
-  0%, 100% { transform:translate(0, 0) }
-  10%{
-    transform:translate(-5%,-10%)
-  }
-  20%{
-    transform:translate(-15%,-20%)
-  }
-  30%{
-    transform:translate(-5%,-10%)
-  }
-  40%{
-    transform:translate(-15%,-20%)
-  }
   
-  50%{
-    transform:translate(-5%,-10%)
-  }
-  60%{
-    transform:translate(-15%,-20%)
-  }
-  70%{
-    transform:translate(-5%,-10%)
-  }
-  80%{
-    transform:translate(-15%,-20%)
-  }
-  90%{
-    transform:translate(-5%,-10%)
-  }
-  100%{
-    transform:translate(-15%,-20%)
-  }
 }
+
+
+.defaultP{
+    background-color: white;
+}
+
+
+#blackbar {
+    position:absolute;
+    top:0%;
+    left:0%;
+    animation: MoveDown 2s linear infinite;
+
+
+}
+
+@keyframes MoveDown {
+    0%, 100% {
+    top: -10%;
+    }
+    60% {
+    top:100%;
+    }
+    }
+
+#blackbar div{
+    height: 100px;
+    width: 100vw;
+    background: black;
+    margin-bottom:1000px;
+
+}
+
+#overlay {
+   position: absolute;
+   top:0%;
+   left:14.5%;
+   opacity: 2;
+   animation: MovDown 1.8s linear infinite;
+   
+}
+
+
+
+#overlay div{
+    width:700px;
+    height: 700px;
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+    border-radius: 25px;
+    margin-bottom:40px;
+ 
+
+}
+@keyframes MovDown {
+    0%, 100% {
+    top: -40%;
+    }
+    60% {
+    top:0%;
+    }
+    }
+
+#leftBlocks{
+    position:absolute;
+    left:3%;
+    animation: MoveUpDown 2s linear infinite;
+}
+
+
+
+
+#leftBlocks div {
+    margin-bottom:150px;
+    height:100px;
+    width:80px;
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+    border-radius: 13px;
+  
+
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+    top: 0%;
+    }
+    60% {
+    top:-100%;
+    }
+    }
+
+    
+    
+    
+    
+    
+    #rightBlocks{
+        position:absolute;
+        right:3%;
+        animation: MoveUpDown 2s linear infinite;
+    }
+    
+    
+    #rightBlocks div {
+        margin-bottom:150px;
+        height:100px;
+        width:80px;
+        background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+        border-radius: 13px;
+      
+    
+    }
+    
+
+#countdown{
+font-family: "Roboto", sans-serif;
+text-align: center; 
+font-size: 15rem;    
+
+}
+
+#countdown p {
+    position: absolute;
+    top:0;
+    left:0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+height: 1500px;
+width:990px;
+color:black;
+font-size: 360px;
+font-weight: bolder;
+
+
+}
+
+/* .line1{
+    position:absolute;
+    top:48%;
+    left:28%;
+    height: 10px;
+    width: 450px;
+    background: black;
+}
+
+.line2{
+    position:absolute;
+    top:38%;
+    left:50%;
+   width: 10px;
+    height: 450px;
+    background: black;  
+}
+
+
+.needle {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    height: 10px;
+    width: 300px;
+    background-color: black;
+    animation: animate 1s linear infinite;
+    transform-origin: left;
+  } 
+  
+  @keyframes animate {
+    0% {
+      transform: rotate(-90deg);
+    }
+    
+    100% {
+      transform: rotate(270deg);
+    }
+  }
+   */
+
+
+#circle{
+ position:absolute;
+bottom:42%;
+left:27%;
+border: 12px solid black;
+height: 450px;
+border-radius:50%;
+width: 450px;
+}
+
+#circle2{
+    position:absolute;
+   bottom:39%;
+   left:19%;
+   border: 15px solid black;
+   height: 600px;
+   border-radius:50%;
+   width: 600px;
+   }
+
+
+#blurr{
+    position:absolute;
+    top:0%;
+    left:0%;
+    animation: SlideDown 8s linear infinite;
+}
+#blurr div {
+    width: 2400px;
+    height: 2400px;
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+    opacity: 0.3;
+
+}
+
+@keyframes SlideDown {
+    0%, 100% {
+    left: -50%;
+    }
+    60% {
+    left:-1%;
+    }
+    }
+
+    #whiteblurr{
+        position:absolute;
+        top:0%;
+        right:10%;
+        animation: MoveUp 59s linear infinite;
+    }
+    #whiteblurr div {
+        width: 2400px;
+        height: 2400px;
+        background-image:url(/images/grain.jpg);
+        opacity: 0.2;
+     
+    }
+    
+    @keyframes MoveUp{
+        0%, 100% {
+        right: -50%;
+        }
+        60% {
+        right:-1%;
+        }
+        }
