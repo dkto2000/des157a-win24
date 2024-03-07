@@ -4,10 +4,8 @@
 
   const body = document.querySelector('body');
   const p = document.querySelector('p');
-  const bA = document.getElementById("back"); 
   const cos = document.getElementById("countdown");
-  const rightBlock =  document.getElementById("rightBlocks");
-  const leftBlock =  document.getElementById("leftBlocks");
+  const reel = document.getElementById("filmreel");
 
 
   let counter = 10;
@@ -22,11 +20,7 @@
 
           }
           else{
-            cos.style.display="none";
-            rightBlock.style.display="none";
-            overlay.style.display="none";
-            leftBlock.style.display="none";
-            body.className='defaultP';
+            reel.style.display="none";
            
           
           }
