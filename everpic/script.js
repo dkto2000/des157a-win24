@@ -6,7 +6,8 @@
   const p = document.querySelector('p');
   const cos = document.getElementById("countdown");
   const reel = document.getElementById("filmreel");
-
+  const real = document.getElementById("realContent");
+  
 
   let counter = 10;
 
@@ -21,7 +22,9 @@
           }
           else{
             reel.style.display="none";
-           
+            real.style.display="block";
+            body.id="defaultP";
+            
           
           }
       }, 1000);

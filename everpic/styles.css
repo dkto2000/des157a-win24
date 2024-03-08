@@ -1,29 +1,54 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-        
 
+        
+@font-face {
+    font-family: myFont;
+    src: url(fonts/warriot.ttf);
+}
 body {
    background-color: black;
    margin:auto;
-
-
-  
+   overflow-x: hidden;
+   overflow-y:hidden; 
 }
 
-.defaultP{
-    background-color: white;
+#defaultP{
+   padding:50px;
+   margin:auto;
+   background-color: black;
+   overflow-x: hidden;
+   overflow-y: scroll;
 }
 
+#realContent{
+    display: none;
+}
 
+article {
+    color:white;
+    
+}
 
-@keyframes MoveDown {
-    0%, 100% {
-    top: -10%;
-    }
-    60% {
-    top:100%;
-    }
-    }
+article p {
+    width:25%;
+}
 
+h1{
+width:3%;
+font-family: myFont;
+font-size: 70px;
+font-weight: 1;
+}
+
+#map {
+    width: 1000px;
+    height:1200px;
+    position:absolute;
+    top:0%;
+    right:0%;
+	
+}
+
+/* Sets up position of middle square */
 #overlay {
    position: absolute;
    top:0%;
@@ -32,9 +57,7 @@ body {
    animation: MovDown 1.8s linear infinite;
    
 }
-
-
-
+/* Comes up with size of middle square */
 #overlay div{
     width:220px;
     height: 200px;
@@ -43,6 +66,7 @@ background-color: white;
     margin-bottom:30px;
 
 }
+/* Animation rules for middle square */
 @keyframes MovDown {
     0%, 100% {
     top: -30%;
@@ -52,43 +76,44 @@ background-color: white;
     }
     }
 
+/* Sets up position of left squares */
 #leftBlocks{
     position:absolute;
     left:3%;
     animation: MoveUpDown 2s linear infinite;
 }
-
-
-
+/* Comes up with size of left squares  */
 #leftBlocks div {
     margin-bottom:75px;
     height:50px;
     width:30px;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10%;
+    opacity:0.5;
   
 
 }
-    
-    
+ 
+/* Sets up position of right squares */
     #rightBlocks{
         position:absolute;
         right:3%;
         animation: MoveUpDown 2s linear infinite;
     }
     
-    
+ /* Comes up with size of right squares  */   
     #rightBlocks div {
         margin-bottom:75px;
         height:50px;
         width:30px;
         background-color: white;
-        border-radius: 5px;
+        border-radius: 10%;
+        opacity:0.5;
       
     
     }
 
-
+/* Animation rules for left and right square */
     @keyframes MoveUpDown {
     0%, 100% {
     top: 0%;
@@ -98,7 +123,7 @@ background-color: white;
     }
     }
     
-
+ /* Sets up position of number */   
 #countdown{
 font-family: "Roboto", sans-serif;
 font-size: 15rem;   
@@ -107,7 +132,7 @@ justify-content: center;
 align-items: center;
 
 }
-
+ /* Sets up size and font of number */   
 #countdown p {
     font-family: "Roboto", sans-serif;
 font-size: 15rem;  
@@ -120,7 +145,7 @@ font-weight: bolder;
 
 }
 
-
+ /* Sets up position, size and color of circle */ 
 #circle{
     position:absolute;
    bottom:40%;
@@ -131,7 +156,6 @@ font-weight: bolder;
    width: 160px;
    }
 
-
 #blurr{
     position:absolute;
     top:0%;
@@ -139,25 +163,12 @@ font-weight: bolder;
     animation: SlideDown 10s linear infinite;
 }
 #blurr div {
-    width: 360px;
-    height: 750px;
+    width: 2000px;
+    height: 1200px;
     background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
-    opacity: 0.2;
+    opacity: 0.15;
 
 }
-#blurr2{
-    position:absolute;
-    top:0%;
-    left:0%;
-}
-#blurr2 div {
-    width: 360px;
-    height: 750px;
-    background-image:linear-gradient(transparent,rgba(0,0,0,0.5));
-    
-
-}
-
 
 @keyframes SlideDown {
     0%, 100% {
@@ -168,30 +179,44 @@ font-weight: bolder;
     }
     }
 
+#blurr2{
+    position:absolute;
+    top:0%;
+    right:0%;
+    animation: MoveUp 10s linear infinite;
+}
+#blurr2 div {
+    width: 2000px;
+    height: 1200px;
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+    opacity: 0.15;
+
+}
+
+@keyframes MoveUp{
+    0%, 100% {
+   top:-5%
+    }
+    60% {
+    top:0%;
+    }
+    }
+
 #whiteblurr{
-        position:absolute;
-        top:0%;
-        right:0%;
-        animation: MoveUp 10s linear infinite;
-    }
-    #whiteblurr div {
-        width: 320px;
-        height: 800px;
-        background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
-        opacity: 0.2;
-
-    }
-
-
+    position:absolute;
+    top:0%;
+    left:0%;
+}
+#whiteblurr div {
+    width: 1200px;
+    height: 1200px;
+    background-image:linear-gradient(transparent,rgba(0,0,0,0.5));
     
-    @keyframes MoveUp{
-        0%, 100% {
-       top:-5%
-        }
-        60% {
-        top:0%;
-        }
-        }
+
+}
+
+
+
 
 
         @media only screen and (min-width: 320px) {
@@ -209,7 +234,20 @@ font-weight: bolder;
            
           }
           @media only screen and (min-width: 425px) {
-           
+            #circle{
+                position: absolute;
+                left: calc(50% - 140px);
+                top:27%;
+                  width:250px;
+                  height: 250px;
+                   
+                     }
+    
+    
+                     #countdown p {
+                        padding:30px;
+                        font-size: 200px;
+                     }
             #overlay {
                 position: absolute;
                 left: calc(50% - 150px);
