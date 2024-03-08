@@ -11,30 +11,50 @@
   const real = document.getElementById("realContent");
   
 
-  let counter = 10;
+//   let counter = 10;
 
 
-  // function to call on timer to load main content in.
-  function countTimeDown() {
-      console.log(`running countTimeDown ${11 - counter} time(s)`);
-      setTimeout(function(){
-          if(counter > 0){
-              counter--;
-              p.textContent = counter;
-              countTimeDown();
-// Makes countdown disappear and brings in next page
-          } 
-          else{  
-            reel.style.display="none";
-            real.style.display="block";
-            body.id="defaultP";
+//   // function to call on timer to load main content in.
+//   function countTimeDown() {
+//       console.log(`running countTimeDown ${11 - counter} time(s)`);
+//       setTimeout(function(){
+//           if(counter > 0){
+//               counter--;
+//               p.textContent = counter;
+//               countTimeDown();
+// // Makes countdown disappear and brings in next page
+//           } 
+//           else{  
+//             reel.style.display="none";
+//             real.style.display="block";
+//             body.id="defaultP";
             
           
-          }
-      }, 1000);
-  }
-  countTimeDown();
+//           }
+//       }, 1000);
+//   }
+//   countTimeDown();
+	
+});
+const captions = [
+	'',
+	'',
+	'<img src="images/youngongnoi.JPG" alt="youngong">',
+	'<img src="images/ongnoicop2.JPG" alt="cop">',
+	'<img src="images/ongnoi3.JPG" alt="mature">',
+	'<img src="images/ongnoi4.JPG" alt="imprisonment" id="prison">',
+	' <img src="images/ongnoi5.JPG" alt="imprisonment" id="family">'
+	
 
+];
+
+let figCaption = document.querySelector('figcaption');
+
+figCaption.innerHTML = captions[1];
+
+window.onbeforeunload = function () {
+	window.scrollTo(0, 0);
+}
 
 window.addEventListener('load', function () {
 
@@ -51,7 +71,7 @@ window.addEventListener('load', function () {
 
 
 	window.addEventListener('scroll', function () {
-		pageTop = window.pageYOffset + 400;
+		pageTop = window.pageYOffset + 300;
 
 
 		// if the page is being scrolled
@@ -69,10 +89,30 @@ window.addEventListener('load', function () {
 		if (counter != prevCounter) {
 			
 			figureImg.className = 'map' + counter;
+			if (counter > prevCounter) {
+				exitDirection = 'animate exitup';
+				enterDirection = 'animate enterup';
+			}
+			else {
+				exitDirection = 'animate exitdown';
+				enterDirection = 'animate enterdown';
+			}
+
+			figCaption.className = exitDirection;
+			figCaption.addEventListener('animationend', function () {
+				let newCaption = document.querySelector('figcaption').cloneNode(true);
+				figCaption.remove();
+				newCaption.className = enterDirection;
+				newCaption.innerHTML = captions[counter];
+				document.querySelector('figure').appendChild(newCaption);
+				figCaption = document.querySelector('figcaption');
+			});
+
 			prevCounter = counter;
 		}
 
 	}); // end window scroll function
+
 
 	// Resize window event
 	window.addEventListener('resize', function () {
@@ -85,6 +125,7 @@ window.addEventListener('load', function () {
 
 		}, 500);
 	});
+
 
 	// this function resets variables that may have been altered after resizing
 	function resetPagePosition() {
@@ -100,7 +141,6 @@ window.addEventListener('load', function () {
 
 	}
 
-});
 
 
 }());

@@ -11,7 +11,7 @@ body {
    background-color: black;
    margin:auto;
    overflow-x: hidden;
-   overflow-y:hidden; 
+   overflow-y: scroll;
 }
 
 #defaultP{
@@ -21,9 +21,9 @@ body {
    overflow-y: scroll;
 }
 
-#realContent{
+/* #realContent{
     display: none;
-}
+} */
 
 main {
     margin-top:100px;
@@ -112,7 +112,92 @@ figure img {
     left:calc(-100% - 20vw);
     width: 2804px;
 }
+figcaption img{
+	position:absolute;
+	right:10%;
+	top:20%;
+	width: 350px;
+	padding: 30px;
+	padding-bottom: 50px;
+	background-color: white;
+    border-radius: 5px;
 
+}
+
+#prison {
+    width:450px;
+    position: absolute;
+    top:55%;
+    left:0%;
+}
+
+#family{
+    width:450px;
+    position: absolute;
+    top:50%;
+    left:50%;
+}
+
+
+.animate {
+	animation-duration: 700ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000);
+}
+
+.enterup {
+	animation-name: enterup;
+	animation-delay: .5s;	
+}
+
+.enterdown {
+	animation-name: enterdown;
+	animation-delay: .5s;
+}
+
+.exitup {
+	animation-name: exitup;
+}
+
+.exitdown {
+	animation-name: exitdown;
+}
+
+@keyframes enterup {
+	0%{
+		top: -10%;
+	}
+	100% {
+		top: 10%;
+	}
+}
+
+@keyframes enterdown {
+	0%{
+		top: -20%;
+	}
+	100% {
+		top: 50%;
+	}
+}
+
+@keyframes exitup {
+	0%{
+		top: 50%;
+	}
+	100% {
+		top: -20%;
+	}
+}
+
+@keyframes exitdown {
+	0%{
+		top: 50%;
+	}
+	100% {
+		top: 105%;
+	}
+}
 
 /* Sets up position of middle square */
 #overlay {
@@ -146,7 +231,7 @@ background-color: white;
 #leftBlocks{
     position:absolute;
     left:3%;
-    animation: MoveUpDown 2s linear infinite;
+    animation: MoveUpDown 1s linear infinite;
 }
 /* Comes up with size of left squares  */
 #leftBlocks div {
@@ -164,7 +249,7 @@ background-color: white;
     #rightBlocks{
         position:absolute;
         right:3%;
-        animation: MoveUpDown 2s linear infinite;
+        animation: MoveUpDown 1s linear infinite;
     }
     
  /* Comes up with size of right squares  */   
@@ -225,13 +310,13 @@ font-weight: bolder;
     position:absolute;
     top:0%;
     left:0%;
-    animation: SlideDown 10s linear infinite;
+    animation: SlideDown 5s linear infinite;
 }
 #blurr div {
     width: 2000px;
-    height: 1200px;
+    height: 6000px;
     background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
-    opacity: 0.15;
+    opacity: 0.1;
 
 }
 
@@ -248,13 +333,13 @@ font-weight: bolder;
     position:absolute;
     top:0%;
     right:0%;
-    animation: MoveUp 10s linear infinite;
+    animation: MoveUp 5s linear infinite;
 }
 #blurr2 div {
     width: 2000px;
-    height: 1200px;
+    height: 6000px;
     background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
-    opacity: 0.15;
+    opacity: 0.2;
 
 }
 
@@ -274,8 +359,9 @@ font-weight: bolder;
 }
 #whiteblurr div {
     width: 1200px;
-    height: 1200px;
+    height: 6000px;
     background-image:linear-gradient(transparent,rgba(0,0,0,0.5));
+    opacity: 0.8;
     
 
 }
