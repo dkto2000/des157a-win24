@@ -11,7 +11,7 @@ body {
    background-color: black;
    margin:auto;
    overflow-x: hidden;
-   overflow-y: scroll;
+   overflow-y: hidden;
 }
 
 #defaultP{
@@ -79,6 +79,7 @@ figure img {
 	top:0;
 	left: 50%;
 	transform:translateX(-50%);
+    display: none;
 }
 
 .map2 {
