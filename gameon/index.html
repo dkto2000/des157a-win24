@@ -6,11 +6,13 @@
   <link href="styles.css" rel="stylesheet">
   <title>Game On!</title>
   <script src="script.js" defer></script>
+  <audio id="diceRoll" src="sound/8bit Click Sound Effect.mp3"></audio>
+  <audio id="win" src="sound/8 Bit Victory Sound FX [HQ] - Free Download.mp3"></audio>
 </head>
 <body>
   <main>
-    <div><img src="images/8B.png" alt="switch" id="switch"></div> 
-    <div><img src="images/1.png" alt="book" id="book"></div>
+    <div><img src="images/page.png" alt="page" id="page"></div>
+    <div><img src="images/3B.png" alt="phone" id="phone"></div> 
 <section id="rules">
   <h1>Escape from Death</h1>
   <p>Rules</p>
@@ -25,13 +27,56 @@
   <button id="start">Start</button>
 </section>
    
+<section id="game">
 
-    <div><img src="images/SkeletonIdle.gif" alt="skeleton" id="skull"></div>
+
+<div id="profile">
+    <div id="player1">
+        <h2>Player 1</h2>
+        <div id="first">
+            <img src="images/Pink_Monster.png" alt="player 1 headshot">
+        </div>
+        <div id="score1"></div>
+    </div>
+    
+
+    <div id="player2">
+        <h2>Player 2</h2>
+        <div id="second">
+            <img src="images/Dude_Monster.png" alt="player 2 headshot">
+        </div>
+        <div id="score2"></div>
+    </div>
+</div>
+<div id="data"></div>
+<div id="dices"></div>
+<div id="initialPick">
+  <p>Let's see who goes first!<p>
+  <button id="trueStart">Click</button>
+</div>
+
+
+<div id="result"></div> 
+
+
+
+<div id="values"></div>
+
+
+
+
   
+</section>
 
+    
+  
+<div><img src="images/SkeletonIdle.gif" alt="skeleton" id="skull"></div> 
 
   </main>
   
+  <footer>
+    <p><a href="sources.html" target="_blank">Sources</a></p>
+</footer>
 
 </body>
 </html>
