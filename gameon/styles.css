@@ -1,0 +1,47 @@
+body{
+  background-color: black;
+  margin:auto;
+  padding:5px;
+}
+
+#book{
+  position: absolute;
+  top:8%;
+  left:-3.5%;
+  width:345px;
+  height:500px;
+}
+
+#switch {
+  padding-top:50px;
+  width: 310px;
+  height: 550px;
+  overflow: hidden;
+}
+#skull {
+  display: none;
+  transform: rotateY(180deg);
+}
+
+#start {
+  background-color: burlywood;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:black;
+  position:absolute;
+  top:460%;
+  left:14%;
+  padding:15px;
+  width:150px;  
+  border-radius: 5px;
+  
+}
+
+#rules {
+  position: absolute;
+  top:25%;
+  left:20%;
+ font-size: 10px;
+ height:50px;
+ width:200px;
+}
+
