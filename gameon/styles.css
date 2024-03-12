@@ -203,3 +203,27 @@ footer{
   padding:10px;
   border-radius: 5px;
 }
+
+
+@media only screen and (min-width: 320px) {
+  #rules{
+      position: absolute;
+      left: calc(50% - 100px);
+  
+       }
+  #page {
+      position: absolute;
+      left: calc(50% - 170px);
+  
+  
+  }
+  #game {
+      position: absolute;
+      left: calc(50% - 80px);
+  
+  }
+  footer {
+    position: absolute;
+    left: calc(50% - 40px);
+  }
+}
