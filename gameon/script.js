@@ -151,7 +151,7 @@ function checkWinningCondition() {
       showCurrentScore();
   
 }
-
+// Presents scores of the players
 function showCurrentScore() {
   score1.innerHTML = `<h2>Score: ${gameData.score[0]}</h2>`;
   score2.innerHTML = `<h2>Score: ${gameData.score[1]}</h2>`;

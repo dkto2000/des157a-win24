@@ -1,0 +1,532 @@
+* {
+	box-sizing: border-box;
+}
+
+        
+@font-face {
+    font-family: myFont;
+    src: url(fonts/warriot.ttf);
+}
+body {
+   background-color: black;
+   margin:auto;
+   overflow-x: hidden;
+   overflow-y: hidden;
+}
+
+#defaultP{
+ 
+   background-color: black;
+   overflow-x: hidden;
+   overflow-y: scroll;
+}
+
+/* #realContent{
+    display: none;
+} */
+
+main {
+    margin-top:100px;
+	padding: 35px;
+}
+
+section {
+	height: 100vh;
+    padding-right:200px;
+}
+
+article {
+    color:white;
+    
+}
+
+article p {
+    width:25%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1rem;  
+    line-height: 1.5em;
+}
+
+h1{
+width:20vw;
+font-family: myFont;
+font-size: 70px;
+font-weight: 1;
+}
+
+
+figure {
+    display: block;
+	margin: 0;
+	width: 75vw;
+	height: 100vh;
+	position: fixed;
+	top:0;
+	right:0;
+	overflow: hidden;
+}
+	
+
+
+figure img {
+	position: absolute;
+
+	transition: all 3s ease;
+}
+
+.map1{
+	width: 95vh; 
+	top:0;
+	left: 50%;
+	transform:translateX(-50%);
+    display: none;
+}
+
+.map2 {
+    top: -60%;
+    left:calc(-100% - 10vw);
+    width: 2804px;
+    
+}
+
+.map3 {
+    top: -20%;
+    left:calc(-100% - 15vw);
+    width: 2804px;
+    
+}
+
+.map4 {
+    top: -390%;
+    left:calc(-100% - 20vw);
+    width: 2804px;
+}
+
+.map5 {
+    top: -180%;
+    left:calc(-100% - 30vw);
+    width: 2804px;
+}
+
+.map6 {
+    top: -390%;
+    left:calc(-100% - 20vw);
+    width: 2804px;
+}
+figcaption img{
+	position:absolute;
+	right:10%;
+	top:20%;
+	width: 350px;
+	padding: 30px;
+	padding-bottom: 50px;
+	background-color: white;
+    border-radius: 5px;
+
+}
+
+#prison {
+    width:450px;
+    position: absolute;
+    top:55%;
+    left:0%;
+}
+
+#family{
+    width:450px;
+    position: absolute;
+    top:50%;
+    left:50%;
+}
+
+
+.animate {
+	animation-duration: 700ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000);
+}
+
+.enterup {
+	animation-name: enterup;
+	animation-delay: .5s;	
+}
+
+.enterdown {
+	animation-name: enterdown;
+	animation-delay: .5s;
+}
+
+.exitup {
+	animation-name: exitup;
+}
+
+.exitdown {
+	animation-name: exitdown;
+}
+
+@keyframes enterup {
+	0%{
+		top: -10%;
+	}
+	100% {
+		top: 10%;
+	}
+}
+
+@keyframes enterdown {
+	0%{
+		top: -20%;
+	}
+	100% {
+		top: 50%;
+	}
+}
+
+@keyframes exitup {
+	0%{
+		top: 50%;
+	}
+	100% {
+		top: -20%;
+	}
+}
+
+@keyframes exitdown {
+	0%{
+		top: 50%;
+	}
+	100% {
+		top: 105%;
+	}
+}
+
+/* Sets up position of middle square */
+#overlay {
+   position: absolute;
+   top:0%;
+   left:15%;
+   opacity: 0.5;
+   animation: MovDown 1.8s linear infinite;
+   
+}
+/* Comes up with size of middle square */
+#overlay div{
+    width:220px;
+    height: 200px;
+background-color: white;
+    border-radius: 25px;
+    margin-bottom:30px;
+
+}
+/* Animation rules for middle square */
+@keyframes MovDown {
+    0%, 100% {
+    top: -30%;
+    }
+    60% {
+    top:5%;
+    }
+    }
+
+/* Sets up position of left squares */
+#leftBlocks{
+    position:absolute;
+    left:3%;
+    animation: MoveUpDown 1s linear infinite;
+}
+/* Comes up with size of left squares  */
+#leftBlocks div {
+    margin-bottom:75px;
+    height:50px;
+    width:30px;
+    background-color: white;
+    border-radius: 10%;
+    opacity:0.5;
+  
+
+}
+ 
+/* Sets up position of right squares */
+    #rightBlocks{
+        position:absolute;
+        right:3%;
+        animation: MoveUpDown 1s linear infinite;
+    }
+    
+ /* Comes up with size of right squares  */   
+    #rightBlocks div {
+        margin-bottom:75px;
+        height:50px;
+        width:30px;
+        background-color: white;
+        border-radius: 10%;
+        opacity:0.5;
+      
+    
+    }
+
+/* Animation rules for left and right square */
+    @keyframes MoveUpDown {
+    0%, 100% {
+    top: 0%;
+    }
+    60% {
+    top:-100%;
+    }
+    }
+    
+ /* Sets up position of number */   
+#countdown{
+font-family: "Roboto", sans-serif;
+font-size: 15rem;   
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+ /* Sets up size and font of number */   
+#countdown p {
+    font-family: "Roboto", sans-serif;
+font-size: 15rem;  
+padding:165px;
+padding-left:160px;
+color:white;
+font-size: 120px;
+font-weight: bolder;
+
+
+}
+
+ /* Sets up position, size and color of circle */ 
+#circle{
+    position:absolute;
+   bottom:45%;
+   border: 15px solid white;
+   height: 160px;
+   border-radius:50%;
+   width: 160px;
+   }
+
+#blurr{
+    position:absolute;
+    top:0%;
+    left:0%;
+    animation: SlideDown 5s linear infinite;
+}
+#blurr div {
+    width: 2000px;
+    height: 6000px;
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+    opacity: 0.1;
+
+}
+
+@keyframes SlideDown {
+    0%, 100% {
+    left: -10%;
+    }
+    60% {
+    left:0%;
+    }
+    }
+
+#blurr2{
+    position:absolute;
+    top:0%;
+    right:0%;
+    animation: MoveUp 5s linear infinite;
+}
+#blurr2 div {
+    width: 2000px;
+    height: 6000px;
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+    opacity: 0.2;
+
+}
+
+@keyframes MoveUp{
+    0%, 100% {
+   top:-5%
+    }
+    60% {
+    top:0%;
+    }
+    }
+
+#whiteblurr{
+    position:absolute;
+    top:0%;
+    left:0%;
+}
+#whiteblurr div {
+    width: 1200px;
+    height: 6000px;
+    background-image:linear-gradient(transparent,rgba(0,0,0,0.5));
+    opacity: 0.8;
+    
+
+}
+
+
+
+        @media only screen and (min-width: 320px) {
+            #circle{
+                position: absolute;
+                left: calc(50% - 85px);
+               top:36%;
+                 }
+            #overlay {
+                position: absolute;
+                left: calc(50% - 110px);
+            
+            }
+
+           
+          }
+          @media only screen and (min-width: 425px) {
+            #circle{
+                position: absolute;
+                left: calc(50% - 125px);
+                top:27%;
+                  width:250px;
+                  height: 250px;
+                   
+                     }
+    
+    
+                     #countdown p {
+                        padding:30px;
+                        font-size: 200px;
+                     }
+            #overlay {
+                position: absolute;
+                left: calc(50% - 150px);
+                
+            }
+            #overlay div {
+                width:300px;
+                height:300px;
+            }
+           
+          }
+          @media only screen and (min-width: 600px) {
+            #circle{
+            position: absolute;
+            left: calc(50% - 150px);
+            top:25%;
+              width:300px;
+              height:300px;
+               
+                 }
+
+
+                 #countdown p {
+                    padding:30px;
+                    font-size: 200px;
+                 }
+            #overlay {
+                position: absolute;
+                left: calc(50% - 200px);
+                
+            }
+            #overlay div {
+                width:400px;
+                height:400px;
+            }
+
+            #leftBlocks div, #rightBlocks div {
+                width:60px;
+                height:100px;
+            }
+           
+          }
+          @media only screen and (min-width: 768px) {
+            #circle{
+                position: absolute;
+                left: calc(50% - 200px);
+                top:18%;
+                  width:400px;
+                  height:400px;
+                   
+                     }
+    
+    
+                     #countdown p {
+                        font-size: 300px;
+                        margin-top:150px;
+                     }
+            #overlay {
+                position: absolute;
+                left: calc(50% - 250px);
+                
+            }
+            #overlay div {
+                width:500px;
+                height:500px;
+            }
+
+            #leftBlocks div, #rightBlocks div {
+                width:90px;
+                height:150px;
+            }
+           
+          }
+
+          @media only screen and (min-width: 1024px) {
+           
+            #overlay {
+                position: absolute;
+                left: calc(50% - 300px);
+                
+            }
+            #overlay div {
+                width:600px;
+                height:600px;
+            }
+
+            #leftBlocks div, #rightBlocks div {
+                width:120px;
+                height:200px;
+            }
+           
+          }
+       
+          @media only screen and (min-width: 1440px) {
+            #circle{
+                position: absolute;
+                left: calc(50% - 255px);
+                top:20%;
+                  width:500px;
+                  height:500px;
+                   
+                     }
+    
+    
+                     #countdown p {
+                        font-size: 400px;
+                     }
+            #overlay {
+                position: absolute;
+                left: calc(50% - 350px);
+                
+            }
+            #overlay div {
+                width:700px;
+                height:700px;
+            }
+
+            #leftBlocks, #rightBlocks{
+                padding:50px;
+            }
+
+            #leftBlocks div, #rightBlocks div {
+                width:150px;
+                height:250px;
+            }
+           
+          }
+    
+
+   
+
+        
