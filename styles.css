@@ -57,6 +57,7 @@ body{
     list-style-type: none;
     padding:8px;
   }
+
   li {
     list-style-type: none;
     cursor:pointer;
@@ -67,8 +68,16 @@ body{
   a {
     text-decoration: none;
     color:white;
+    margin:auto;
   }
   
+  #visual {
+    padding-bottom:30px;
+  }
+
+  #report {
+    padding-bottom:30px;
+  }
   
   #leftcolumn{
     background-color: #310D20;
