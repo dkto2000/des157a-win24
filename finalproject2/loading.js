@@ -9,6 +9,7 @@
   const cos = document.getElementById("countdown");
   const reel = document.getElementById("filmreel");
   const real = document.getElementById("realContent");
+  const mob = document.getElementById("mobilereel");
   const vietmap = document.querySelector('.map1');
 
   let counter = 10;
@@ -22,17 +23,25 @@
               counter--;
               p.textContent = counter;
               countTimeDown();
+              reel.style.display="block";
               real.style.display="none";
+              mob.style.display="none";
 // Makes countdown disappear and brings in next page
           } 
-          else{  
+          else if(window.innerWidth < 769) {
+          reel.style.display="none";
+          mob.style.display="block";
+         
+          }
+           else {
             reel.style.display="none";
             real.style.display="block";
-            vietmap.style.display="block";
+            vietmap.style.display="block"
             body.id="defaultP";
-            
+           }
           
-          }
+      
+             
       }, 1000);
   }
   countTimeDown();

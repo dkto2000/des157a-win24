@@ -11,7 +11,7 @@ body {
    background-color: black;
    margin:auto;
    overflow-x: hidden;
-   overflow-y: hidden;
+   
 }
 
 #defaultP{
@@ -76,7 +76,7 @@ figure img {
 	top:0;
 	left: 50%;
 	transform:translateX(-50%);
-    display: none;
+   
 }
 
 .map2 {
@@ -134,6 +134,11 @@ figcaption img{
     position: absolute;
     top:50%;
     left:50%;
+}
+
+#youngong {
+ 
+    height:100px;
 }
 
 
@@ -197,64 +202,3 @@ figcaption img{
 	}
 }
 
-
-
-
-#blurr{
-    position:absolute;
-    top:0%;
-    left:0%;
-    animation: SlideDown 5s linear infinite;
-}
-#blurr div {
-    width: 2000px;
-    height: 6000px;
-    background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
-    opacity: 0.1;
-
-}
-
-@keyframes SlideDown {
-    0%, 100% {
-    left: -10%;
-    }
-    60% {
-    left:0%;
-    }
-    }
-
-#blurr2{
-    position:absolute;
-    top:0%;
-    right:0%;
-    animation: MoveUp 5s linear infinite;
-}
-#blurr2 div {
-    width: 2000px;
-    height: 6000px;
-    background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
-    opacity: 0.2;
-
-}
-
-@keyframes MoveUp{
-    0%, 100% {
-   top:-5%
-    }
-    60% {
-    top:0%;
-    }
-    }
-
-#whiteblurr{
-    position:absolute;
-    top:0%;
-    left:0%;
-}
-#whiteblurr div {
-    width: 1200px;
-    height: 6000px;
-    background-image:linear-gradient(transparent,rgba(0,0,0,0.5));
-    opacity: 0.8;
-  }
-        

@@ -2,7 +2,14 @@
   'use strict'
   console.log('reading js');
 	
-});
+
+	const body = document.querySelector('body');
+  const p = document.querySelector('p');
+  const cos = document.getElementById("countdown");
+  const reel = document.getElementById("filmreel");
+  const real = document.getElementById("realContent");
+  const vietmap = document.querySelector('.map1');
+
 const captions = [
 	'',
 	'',
@@ -32,6 +39,8 @@ window.addEventListener('load', function () {
 	let counter = 1;
 	let prevCounter = 1;
 	let doneResizing;
+	let exitDirection;
+	let enterDirection;
 
 	
 	resetPagePosition();
@@ -44,17 +53,17 @@ window.addEventListener('load', function () {
 		// if the page is being scrolled
 		if (pageTop > postTops[counter]) {
 			counter++;
-			
+			console.log(`scrolling down ${counter}`);
 		}
 		// if page is being scrolled up
 		else if (counter > 1 && pageTop < postTops[counter - 1]) {
 			counter--;
+			console.log(`scrolling up ${counter}`);
 		
 		}
 
 		// Every time a section changes
 		if (counter != prevCounter) {
-			
 			figureImg.className = 'map' + counter;
 			if (counter > prevCounter) {
 				exitDirection = 'animate exitup';
@@ -108,6 +117,6 @@ window.addEventListener('load', function () {
 
 	}
 
-
+});
 
 }());
