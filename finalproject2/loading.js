@@ -28,11 +28,15 @@
               mob.style.display="none";
 // Makes countdown disappear and brings in next page
           } 
+          
+          // Makes the preloader load the mobile script if screen is less than 769 pixels
           else if(window.innerWidth < 769) {
           reel.style.display="none";
           mob.style.display="block";
          
           }
+
+          // Spawns the default code if screen does not meet criteria
            else {
             reel.style.display="none";
             real.style.display="block";

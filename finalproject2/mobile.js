@@ -23,6 +23,7 @@
           case 'hue': theImg.className = 'hue'; break;
           case 'center': theImg.className = 'hue'; break;
       }
+    //   allows for text to be changed upon change in map location
       if(thisSpot = event.target.id){
           switch (thisSpot) {
               case 'thaibinh': h1.innerHTML = "1932"; break;
@@ -55,16 +56,7 @@
       });
   });
 
-  /* This event listener fires while the mouse is moving.
-  If the value of thisSpot is 'out' you are not over a hotspot. 
-  If you stop moving the mouse for a second or longer while not
-  over a hotspot, the image zooms out.
-  
-  This seems to keep the dizzying effects of constantly zooming in and
-  out as you mouse in and out of the hotspots to a minimum, and stops the 
-  unintended effect of having the image sometimes slide out of the container
-  entirely.
-  */
+
   document.addEventListener('mousemove', function(){
       clearTimeout(movingMouse);
       if(thisSpot == 'out'){
