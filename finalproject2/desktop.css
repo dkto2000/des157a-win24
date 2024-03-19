@@ -330,6 +330,21 @@ font-weight: bolder;
     opacity: 0.1;
 
 }
+#blurr3{
+    position:absolute;
+    top:0%;
+    left:0%;
+    animation: SlideDown 5s linear infinite;
+}
+#blurr3 div {
+    width: 6000px;
+    height: 10000px;
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+    opacity: 0.1;
+
+}
+
+
 
 @keyframes SlideDown {
     0%, 100% {
@@ -354,6 +369,20 @@ font-weight: bolder;
 
 }
 
+#blurr4{
+    position:absolute;
+    top:0%;
+    right:0%;
+    animation: MoveUp 5s linear infinite;
+}
+#blurr4 div {
+    width: 6000px;
+    height: 10000px;
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+    opacity: 0.2;
+
+}
+
 @keyframes MoveUp{
     0%, 100% {
    top:-5%
@@ -369,6 +398,20 @@ font-weight: bolder;
     left:0%;
 }
 #whiteblurr div {
+    width: 6000px;
+    height: 10000px;
+    background-image:linear-gradient(transparent,rgba(0,0,0,0.5));
+    opacity: 0.8;
+    
+
+}
+
+#whiteblurr2{
+    position:absolute;
+    top:0%;
+    left:0%;
+}
+#whiteblurr2 div {
     width: 6000px;
     height: 10000px;
     background-image:linear-gradient(transparent,rgba(0,0,0,0.5));
